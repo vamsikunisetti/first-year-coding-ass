@@ -1,0 +1,30 @@
+include<stdio.h>
+int main()
+{
+	int income,tax;
+	char ch[10];
+	printf("enter the income and name");
+	scanf("%d\t%s",&income,&ch);
+	if(income<150000)
+	{
+		printf("no tax");
+	}
+	else if (income>150000&&income<300000)
+	{
+		tax=(income*10)/100;
+	}
+	else if (income>300000&&income<50000)
+	{
+		tax=(income*15)/100;
+	}
+	else
+	{
+		tax=(income*20)/100;
+	}
+	printf("customer name: %s\n",ch);
+	printf("income : %d\n",income);
+	printf("\n");
+	printf("tax %d\n",tax);
+	
+return 0;	
+}
